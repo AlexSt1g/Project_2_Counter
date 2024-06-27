@@ -16,8 +16,8 @@ public class CountView : MonoBehaviour
         _counter.Changed -= DisplayCount;
     }
 
-    private void DisplayCount()
-    {
-        _text.text = _counter.CurrentNumber.ToString("");
+    private void DisplayCount(int number)
+    {        
+        _text.text = number.ToString("");
     }
 }
